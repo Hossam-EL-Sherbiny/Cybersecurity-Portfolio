@@ -1,0 +1,13 @@
+# Analyst Notes
+
+During this investigation, I intentionally followed a structured investigation workflow rather than solving challenge questions individually.
+
+Instead of searching directly for answers, each step was treated as part of an incident response process.
+
+SMB negotiation packets were analyzed first to determine the initial source of lateral movement.
+
+NTLM authentication packets then revealed the credentials used during authentication.
+
+Finally, SMB object reconstruction and Tree Connect analysis confirmed PsExec deployment and the administrative shares used throughout the attack.
+
+This approach mirrors how a SOC analyst or DFIR investigator would reconstruct attacker activity during a real incident.
