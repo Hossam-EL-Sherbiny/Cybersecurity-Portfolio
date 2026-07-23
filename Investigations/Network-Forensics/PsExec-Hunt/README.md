@@ -2,6 +2,18 @@
 
 ---
 
+# Executive Summary
+
+This investigation analyzed SMB traffic captured during a suspected PsExec lateral movement incident.
+
+The analysis identified the attacker's initial access point, authenticated user, remote systems accessed, service executable deployed, and administrative shares used during the intrusion.
+
+Evidence collected from SMB negotiation, NTLM authentication, and exported SMB objects enabled reconstruction of the complete attack timeline.
+
+The findings confirmed successful lateral movement using legitimate administrative functionality, highlighting the importance of monitoring SMB administrative shares and remote service creation.
+
+---
+
 # Overview
 
 This investigation analyzes a network packet capture (PCAP) containing evidence of an attacker performing lateral movement using Microsoft's PsExec utility.
